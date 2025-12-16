@@ -204,7 +204,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: #ff695f;
-  opacity: 0.15;
+  /* opacity: 0.15; */
 }
 
 .main-blue-button a {
@@ -325,14 +325,19 @@ header
   background: transparent;
 }
 
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-area .main-nav .logo {
-  line-height: 100px;
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  float: left;
+  /* line-height: 100px; */
+  /* color: #fff; */
+  /* font-size: 28px; */
+  /* font-weight: 700; */
+  /* text-transform: uppercase; */
+  /* letter-spacing: 2px; */
+  /* float: left; */
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -340,7 +345,7 @@ header
 }
 
 .background-header .main-nav .logo {
-  line-height: 75px;
+  /* line-height: 75px; */
 }
 
 .background-header .main-nav .nav {
@@ -609,6 +614,8 @@ header
 
 .header-area.header-sticky {
   min-height: 80px;
+  position: sticky;
+  top: 0;
 }
 
 .header-area .nav {
@@ -666,13 +673,13 @@ header
     padding: 0px;
   }
   .header-area .logo {
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
   .header-area .menu-trigger {
     display: block !important;
   }
   .header-area .main-nav {
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .header-area .main-nav .nav {
     float: none;
@@ -1328,9 +1335,10 @@ Pricing
 .pricing-tables .section-heading h2 {
   text-align: center;
   margin: 0px 60px 0px 60px;
-  margin-bottom: -5px;
+  /* margin-bottom: -5px; */
   position: relative;
   z-index: 1;
+  margin-bottom: 12px;
 }
 
 .pricing-tables .item {
@@ -1348,13 +1356,14 @@ Pricing
   font-size: 20px;
   font-weight: 700;
   color: #2a2a2a;
+  margin-bottom: 12px;
 }
 
 .pricing-tables .item em {
   color: #ff695f;
   font-size: 15px;
   display: block;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   text-decoration: line-through;
   font-style: normal;
 }
@@ -2027,3 +2036,28 @@ responsive
     margin-bottom: 20px;
   }
 }
+
+/* #region custom */
+.pricing-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.pricing-item:hover > .pricing-item-content {
+  /* background-color: #03a4ed; */
+  cursor: pointer;
+  opacity: 1;
+}
+
+.square-logo {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .banner-logo { display: none; }
+  .square-logo { display: block; }
+}
+/* #endregion */
