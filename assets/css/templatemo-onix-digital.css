@@ -1748,7 +1748,7 @@ form#contact {
   border-radius: 20px;
 }
 
-form#contact input {
+form#contact input, form#contact textarea {
   width: 100%;
   height: 46px;
   border-radius: 0px;
@@ -1765,8 +1765,12 @@ form#contact input {
   margin-bottom: 35px;
 }
 
-form#contact input::placeholder {
+form#contact input::placeholder, form#contact textarea::placeholder {
   color: #afafaf;
+}
+
+form#contact textarea {
+  height: auto;
 }
 
 form#contact button {
