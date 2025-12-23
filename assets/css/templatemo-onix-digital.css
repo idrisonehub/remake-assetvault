@@ -286,7 +286,7 @@ header
 .background-header {
   background-color: #fff!important;
   height: 80px!important;
-  position: fixed!important;
+  /* position: fixed!important; */
   top: 0px;
   left: 0px;
   right: 0px;
@@ -2096,7 +2096,8 @@ responsive
 .section-how-it-works {
   background-color: #fbb438;
   border-bottom: 1px solid #e8e8e8;
-  padding: 5rem 0;
+  /* padding: 5rem 0; */
+  padding: 3rem 0;
 }
 
 .works-subtitle {
