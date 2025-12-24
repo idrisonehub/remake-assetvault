@@ -157,7 +157,8 @@ body {
 
 @media (max-width: 991px) {
   html, body {
-    overflow-x: hidden;
+    /* header position sticky not working */
+    /* overflow-x: hidden; */
   }
   .mobile-top-fix {
     margin-top: 30px;
