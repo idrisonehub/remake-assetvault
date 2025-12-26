@@ -8,7 +8,8 @@
     var box = $('.header-text').height();
     var header = $('header').height();
 
-    if (scroll >= box - header) {
+    // if (scroll >= box - header) { // 362 - 100
+    if (scroll >= 20) {
       $("header").addClass("background-header");
     } else {
       $("header").removeClass("background-header");

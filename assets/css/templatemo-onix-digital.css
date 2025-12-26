@@ -2049,6 +2049,10 @@ responsive
 }
 
 /* #region custom */
+.c-green {
+  color: #719430;
+}
+
 .section-say-goodbay-paper {
   background-color: #b6f8fd;
   border-bottom: 1px solid #e8e8e8;
@@ -2141,6 +2145,51 @@ responsive
   color: #ffffff;
 }
 
+.terms-of-use p {
+  margin-bottom: 12px;
+}
+
+/* .ordered-list {
+  list-style-type: none;
+  counter-reset: item;
+} */
+
+.ordered-list > li {
+  list-style: decimal;
+  margin-left: 16px;
+  padding-left: 6px;
+}
+
+/* .ordered-list li::before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+  font-weight: 600;
+  color: #719430;
+  margin-left: -18px;
+} */
+
+/* .ordered-list > li > ol {
+  counter-reset: item;
+  list-style-type: none;
+} */
+
+.ordered-list-title {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.ordered-list-title, .ordered-list > li::marker {
+  font-weight: 600;
+  color: #719430;
+  /* margin-left: 6px; */
+}
+
+ul.disc-list > li {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 6px;
+}
+
 .square-logo {
   display: none;
 }
@@ -2150,3 +2199,11 @@ responsive
   .square-logo { display: block; }
 }
 /* #endregion */
+
+
+/* ol.test { counter-reset: item }
+ol.test li { display: block }
+ol.test li:before { content: counters(item, ".") ". "; counter-increment: item } */
+
+/* ol.test { counter-reset: item; list-style: none; }
+ol.test li:before { content: counters(item, ". "); counter-increment: item }  */
