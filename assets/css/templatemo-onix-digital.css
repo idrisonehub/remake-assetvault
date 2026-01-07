@@ -97,6 +97,10 @@ header, nav, section, article, aside, footer, hgroup {
   display: block;
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -1342,7 +1346,8 @@ Pricing
 .pricing-tables {
   z-index: 2;
   position: relative;
-  padding-top: 120px;
+  /* padding-top: 120px; */
+  padding-top: 48px;
   margin-top: 0px;
 }
 
@@ -1702,7 +1707,8 @@ contact
 .contact-us {
   z-index: 2;
   position: relative;
-  padding-top: 120px;
+  /* padding-top: 120px; */
+  padding-top: 48px;
   margin-top: 0px;
 }
 
