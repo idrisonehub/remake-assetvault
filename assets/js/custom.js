@@ -142,7 +142,8 @@
   });
 
   function onScroll(event){
-      var scrollPos = $(document).scrollTop();
+      var headerHeight = $('header').outerHeight();
+      var scrollPos = $(document).scrollTop() + headerHeight + 10;
       $('.nav a').each(function () {
           var currLink = $(this);
           try {
